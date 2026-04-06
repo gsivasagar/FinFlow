@@ -1,0 +1,7 @@
+node_modules
+npm-debug.log
+finance.db
+tests
+jest.config.js
+.git
+.gitignore

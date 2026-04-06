@@ -1,0 +1,8 @@
+node_modules/
+.env
+.DS_Store
+finance.db
+finance.db-shm
+finance.db-wal
+dist/
+build/
