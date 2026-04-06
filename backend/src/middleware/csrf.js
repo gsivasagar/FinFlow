@@ -17,7 +17,7 @@ function csrfProtection(req, res, next) {
   const origin = req.headers.origin;
   const referer = req.headers.referer;
   
-  const expectedOrigin = process.env.FRONTEND_URL || 'http://localhost:5173';
+  const expectedOrigin = process.env.CORS_ORIGIN || 'http://localhost:5173';
   
   if (origin && origin !== expectedOrigin) {
     return res.status(403).json({ error: 'CSRF Origin violation.' });
